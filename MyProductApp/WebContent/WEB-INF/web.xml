@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>MyProductApp</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>Landing.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>BeginSession</display-name>
+    <servlet-name>BeginSession</servlet-name>
+    <servlet-class>com.app.BeginSession</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BeginSession</servlet-name>
+    <url-pattern>/BeginSession</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Checkout</display-name>
+    <servlet-name>Checkout</servlet-name>
+    <servlet-class>com.app.Checkout</servlet-class>
+    <init-param>
+    	<param-name>companyName</param-name>
+    	<param-value>Deloitte</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Checkout</servlet-name>
+    <url-pattern>/Checkout</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Shipping</display-name>
+    <servlet-name>Shipping</servlet-name>
+    <servlet-class>com.app.Shipping</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Shipping</servlet-name>
+    <url-pattern>/Shipping</url-pattern>
+  </servlet-mapping>
+</web-app>
