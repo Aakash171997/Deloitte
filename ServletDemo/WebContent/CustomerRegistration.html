@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Billing</title>
+	</head>
+	<body bgcolor="#bdd2ff" text="#081c45">
+		<font face="Arial" size="20">
+			<center>Billing</center>
+		</font>
+		<hr color="#081c45"/>
+		<center>
+		<form action="CustomerDetails" method="post">
+			<table>
+			<tr>
+				<td>Customer ID:</td>
+				<td><input type="text" id="customerId" name="customerId"></td>
+			<tr>
+				<td>Customer Name:</td>
+				<td><input type="text" id="customerName" name="customerName"></td>
+			</tr>
+			<tr>
+				<td>Customer Address:</td>
+				<td><textarea rows="7" cols="22" id="customerAddress" name="customerAddress">
+				</textarea></td>
+			</tr>
+			<tr>
+				<td>Bill Amount:</td>
+				<td><input tpe="text" id="billAmount" name="billAmount"></td>
+			</tr>
+			<tr>
+				<td align="center"><input type="submit" value="Submit"></td>
+				<td align="center"><input type="reset" value="Clear"></td>
+			</tr>
+			</table>
+		</form>
+		</center>
+	</body>
+</html>
