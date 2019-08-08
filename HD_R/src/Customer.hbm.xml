@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.deloitte.model.EmployeeDetails" table="hr.employeeDetails">
+
+		<id name="employeeId" column="empid">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="employeeName" column="empname" length="10" />
+		<property name="employeeSalary" column="salary"/>
+		
+		<set name="employeeAddress" cascade="save-update" table="hr.EmpAddr">
+			<key column="empid"></key>
+			<many-to-many class="com.deloitte.model.Address" column="aid"></many-to-many>
+		</set>
+		
+	</class>
+	<class name="com.deloitte.model.Address" table="hr.employeeAddress">
+
+		<id name="addressId" column="aid">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="city" column="City" length="10" />
+		<property name="state" column="state" length="10"/>
+	</class>
+</hibernate-mapping>
