@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd" 
+	xmlns:p="http://www.springframework.org/schema/p" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://www.springframework.org/schema/beans"> 
+	
+	<bean id="address" class="com.springDemo.model.Address">
+		<property name="addressId" value="1001"></property>
+		<property name="city" value="Bengaluru"></property>
+		<property name="state" value="Karnataka"></property>
+		<property name="zip" value="560075"></property>
+	</bean>
+</beans>
