@@ -1,0 +1,163 @@
+.grid-container {
+	grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas: "Header Header Header Header Header Header Header Header Header Header Header Header" "Header Header Header Header Header Header Header Header Header Header Header Header" "Navigation Navigation Navigation Navigation Navigation Navigation Navigation Navigation Navigation Navigation Navigation Navigation" ". SearchPanel SearchPanel SearchPanel SearchPanel SearchPanel SearchPanel SearchPanel SearchPanel SearchPanel SearchPanel ." ". SearchResults SearchResults SearchResults SearchResults SearchResults SearchResults SearchResults SearchResults SearchResults SearchResults ." ". SearchResults SearchResults SearchResults SearchResults SearchResults SearchResults SearchResults SearchResults SearchResults SearchResults ." ". SearchResults SearchResults SearchResults SearchResults SearchResults SearchResults SearchResults SearchResults SearchResults SearchResults ." ". SearchResults SearchResults SearchResults SearchResults SearchResults SearchResults SearchResults SearchResults SearchResults SearchResults ." ". . . . . . . . . . . ." ". . . . . . . . . . . ." ". . . . . . . . . . . .";
+}
+
+.Header { 
+	grid-area: Header;
+	background-color: #004fcf;
+	font-family: Arial;
+	color: #ffffff;
+}
+
+.Navigation { 
+	grid-area: Navigation;
+	background-color: #7dafff;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: large; 
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+.SearchPanel { 
+	grid-area: SearchPanel;
+	font-family: Arial;
+	font-size: 20px;
+	padding-top: 20px;
+}
+
+.SearchResults { 
+	grid-area: SearchResults;
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: lighter; 
+}
+
+.butn {
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #3458d9;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.butn:hover {
+  background: #6672de;
+  text-decoration: none;
+}
+
+input[type=text] {
+  width: 50%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  padding: 12px 20px 12px 40px;
+}
+
+input[type=text]:focus {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  padding: 12px 20px 12px 40px;
+}
+
+.heading{
+	font-family: Verdana;
+	font-size: 80px;
+	font-weight: lighter;
+	padding-top: 20px;
+}
+
+.b1{
+	font-family: Verdana;
+	font-size: 40px;
+	font-weight: lighter;
+	padding-top: 50px;
+}
+
+.b2{
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: lighter;
+	padding-top: 20px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #7dafff;
+  font-weight: bold;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #3458d9;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

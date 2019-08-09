@@ -1,0 +1,47 @@
+@charset "ISO-8859-1";
+	.StatusForm { 
+	grid-area: AddBookForm; 
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: lighter;
+	padding-top: 50px; 
+	text-align: center;
+	}
+
+	.butn {
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #3458d9;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.butn:hover {
+  background: #6672de;
+  text-decoration: none;
+}
+
+.td1{
+	
+	width: 20%;
+	padding-left: 60px;
+	
+}
+
+.td {
+  color: white;
+  width: 25%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #7dafff;
+  padding-bottom: 10px;
+  padding-top:10px;
+  padding-left:12px;
+  
+}
